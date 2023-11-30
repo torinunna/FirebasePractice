@@ -14,6 +14,7 @@
 		8657E77C2B16369500F5A0F0 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8657E77B2B16369500F5A0F0 /* SignInViewController.swift */; };
 		8657E7812B16369600F5A0F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8657E7802B16369600F5A0F0 /* Assets.xcassets */; };
 		8657E7842B16369600F5A0F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8657E7822B16369600F5A0F0 /* LaunchScreen.storyboard */; };
+		868317E32B1874A5009E13EF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868317E22B1874A5009E13EF /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8657E7802B16369600F5A0F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8657E7832B16369600F5A0F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8657E7852B16369600F5A0F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		868317E22B1874A5009E13EF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				8657E7772B16369500F5A0F0 /* AppDelegate.swift */,
 				8657E7792B16369500F5A0F0 /* SceneDelegate.swift */,
 				8657E77B2B16369500F5A0F0 /* SignInViewController.swift */,
+				868317E22B1874A5009E13EF /* SignUpViewController.swift */,
 				8657E7802B16369600F5A0F0 /* Assets.xcassets */,
 				8657E7822B16369600F5A0F0 /* LaunchScreen.storyboard */,
 				8657E7852B16369600F5A0F0 /* Info.plist */,
@@ -147,6 +150,7 @@
 			files = (
 				8657E77C2B16369500F5A0F0 /* SignInViewController.swift in Sources */,
 				8657E7782B16369500F5A0F0 /* AppDelegate.swift in Sources */,
+				868317E32B1874A5009E13EF /* SignUpViewController.swift in Sources */,
 				8657E77A2B16369500F5A0F0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

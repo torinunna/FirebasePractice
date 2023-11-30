@@ -1,14 +1,14 @@
 //
-//  SignInViewController.swift
+//  SignUpViewController.swift
 //  FirebasePractice
 //
-//  Created by YUJIN KWON on 11/28/23.
+//  Created by YUJIN KWON on 11/30/23.
 //
 
 import UIKit
 import SnapKit
 
-class SignInViewController: UIViewController {
+class SignUpViewController: UIViewController {
     private lazy var emailTextField: UITextField = {
         let textField = UITextField()
         textField.placeholder = "이메일을 입력하세요"
@@ -21,28 +21,14 @@ class SignInViewController: UIViewController {
         return textField
     }()
 
-    private lazy var signInButton: UIButton = {
-        let button = UIButton()
-        button.setTitle("로그인", for: .normal)
-        button.setTitleColor(.white, for: .normal)
-        button.backgroundColor = .systemBlue
-        return button
-    }()
-    
     private lazy var signUpButton: UIButton = {
         let button = UIButton()
-        button.setTitle("회원가입", for: .normal)
+        button.setTitle("가입하기", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.backgroundColor = .systemBlue
-        button.addTarget(self, action: #selector(signUpBtnPressed), for: .touchUpInside)
         return button
     }()
-    
-    @objc func signUpBtnPressed() {
-        let vc = SignUpViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -50,16 +36,11 @@ class SignInViewController: UIViewController {
     }
 }
 
-private extension SignInViewController {
+private extension SignUpViewController {
     func setUpLayout() {
-        let hStackView = UIStackView()
-        hStackView.axis = .horizontal
-        hStackView.distribution = .fillEqually
-        hStackView.spacing = 15
-        [signInButton, signUpButton].forEach { hStackView.addArrangedSubview($0) }
+
         
-        
-        [emailTextField, passwordTextField, hStackView].forEach { view.addSubview($0) }
+        [emailTextField, passwordTextField, signUpButton].forEach { view.addSubview($0) }
         
         emailTextField.snp.makeConstraints {
             $0.centerX.equalToSuperview()
@@ -71,9 +52,9 @@ private extension SignInViewController {
             $0.top.equalTo(emailTextField.snp.bottom).offset(25)
         }
         
-        hStackView.snp.makeConstraints {
+        signUpButton.snp.makeConstraints {
             $0.centerX.equalToSuperview()
-            $0.leading.trailing.equalToSuperview().inset(30)
+            $0.width.equalTo(200)
             $0.top.equalTo(passwordTextField.snp.bottom).offset(50)
         }
     }
